@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="David">
+    <title>Controle Financeiro - Atividade 1 - HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="header">
+                <div class="header-icon" id="header-icon">
+                    Icone
+                </div>
+                <div class="header-title" id="header-title">
+                    <span id="header-title--span">
+                        Controle Financeiro
+                    </span>
+                </div>
+                <div class="header-menu" id="header-menu">
+                    <div class="header-menu--buttom" id="header-menu--buttom-transacoes">
+                        Cadastro de transações
+                    </div>
+                    <div class="header-menu--buttom" id="header-menu--buttom-limpar">
+                        Limpar dados
+                    </div>
+                    <div class="header-menu--buttom" id="header-menu--buttom-salvar">
+                        Salvar no servidor
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="body">
+                <div class="form">
+                    <div class="form-title form">
+                        <span class="form-title--tipo-transacao" id="form-title--tipo-transacao">
+                            Tipo de Transação
+                        </span>
+                    </div>
+                    <div class="form-combobox form">
+                        <select class="form-combobox--itens" name="form-combobox--itens" id="form-combobox--itens">
+                            <option value="Compra" >Compra</option>
+                            <option value="Venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="form-title form">
+                        <span class="form-title--nome-mercadoria" id="form-title--nome-mercadoria">
+                            Nome da Mercadoria
+                        </span>
+                    </div>
+                    <div class="form-input form">
+                        <input class="form-input--nome-mercadoria" id="form-input--nome-mercadoria" placeholder="Input" type="text" />
+                    </div>
+                    <div class="form-title form">
+                        <span class="form-title--valor" id="form-title--valor">
+                            Valor
+                        </span>
+                    </div>
+                    <div class="form-input form">
+                        <input class="form-input--valor" id="form-input--valor" placeholder="R$ 0,00" type="text" />
+                    </div>
+                    <div class="form-buttom form">
+                        <button class="form-buttom--add-transacao" id="form-buttom--add-transacao">
+                            Adicionar Transação
+                        </button>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list-title">
+                        <span class="list-title--extrato" id="list-title--extrato">
+                            Extrato de transações
+                        </span>
+                    </div>
+                    <div class="list-subtitle">
+                        <div class="list-subtitle">
+                            <span class="list-subtitle--mercadoria">
+                                Mercadoria
+                            </span>
+                        </div>
+                        <div class="list-subtitle">
+                            <span class="list-subtitle--valor">
+                                Valor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="list-insert">
+                        <div class="list-insert">
+                            <span class="list-insert--mercadoria">
+                                Nenhuma mercadoria
+                            </span>
+                        </div>
+                        <div class="list-insert">
+                            <span class="list-insert--valor">
+                                R$ 0,00
+                            </span>
+                        </div>
+                    </div>
+                    <div class="list-total">
+                        <div class="list-total">
+                            <span class="list-total--mercadoria">
+                                Total
+                            </span>
+                        </div>
+                        <div class="list-total">
+                            <div class="list-insert--valor">
+                                <span class="list-insert--valor">
+                                    R$ 0,00
+                                </span>
+                            </div>
+                            <div class="list-insert--valor-label">
+                                <span class="list-insert--valor-label">
+                                    [Lucro]
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
