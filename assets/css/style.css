@@ -1,3 +1,33 @@
-.header {
-    background-color: #E0E0E0;
+body {
+    margin: 0px;
+    font-family: 'latoregular';
+}
+
+
+/*mudar para max depois*/
+
+@media (min-width: 576px) {
+    .header {
+        background-color: #E0E0E0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    #header-title--span {
+        font-size: 32px;
+    }
+    .header-menu--item {
+        display: absolute;
+        color: #FFFFFF;
+        background-color: #333333;
+        height: 100%;
+        width: 75%;
+        text-align: right;
+    }
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
 }

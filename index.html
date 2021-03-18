@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="author" content="David">
     <title>Controle Financeiro - Atividade 1 - HTML/CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="./assets/font/specimen_files/specimen_stylesheet.css" type="text/css">
+
 </head>
 
 <body>
@@ -13,7 +16,7 @@
         <header>
             <div class="header">
                 <div class="header-icon" id="header-icon">
-                    Icone
+                    <img src="./assets/img/logo.png" alt="logo">
                 </div>
                 <div class="header-title" id="header-title">
                     <span id="header-title--span">
@@ -21,15 +24,26 @@
                     </span>
                 </div>
                 <div class="header-menu" id="header-menu">
-                    <div class="header-menu--buttom" id="header-menu--buttom-transacoes">
-                        Cadastro de transações
+                    <div class="header-menu--buttom" id="header-menu--buttom-hamburguer">
+                        <img src="./assets/img/hamburguer.png" alt="menu">
                     </div>
-                    <div class="header-menu--buttom" id="header-menu--buttom-limpar">
-                        Limpar dados
+                    <div class="header-menu--item">
+                        <div id="header-menu--buttom-fechar">
+                            x
+                        </div>
+                        <div id="header-menu--buttom-transacoes">
+                            Cadastro de transações
+                        </div>
+                        <div id="header-menu--buttom-limpar">
+                            Limpar dados
+                        </div>
+                        <div id="header-menu--buttom-salvar">
+                            Salvar no servidor
+                        </div>
+
+
                     </div>
-                    <div class="header-menu--buttom" id="header-menu--buttom-salvar">
-                        Salvar no servidor
-                    </div>
+
                 </div>
             </div>
         </header>
@@ -43,7 +57,7 @@
                     </div>
                     <div class="form-combobox form">
                         <select class="form-combobox--itens" name="form-combobox--itens" id="form-combobox--itens">
-                            <option value="Compra" >Compra</option>
+                            <option value="Compra">Compra</option>
                             <option value="Venda">Venda</option>
                         </select>
                     </div>
