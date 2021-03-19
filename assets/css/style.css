@@ -38,6 +38,7 @@ body {
         background-color: #E0E0E0;
     }
     .bodybg{
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -70,6 +71,17 @@ body {
     }
     #header-menu--buttom-salvar{
          border: none;
+    }
+
+
+
+
+
+    .form{
+        border: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        padding: 10px;
     }
 
 
