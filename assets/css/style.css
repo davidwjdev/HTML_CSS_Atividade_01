@@ -7,6 +7,7 @@ body {
 /*mudar para max depois*/
 
 @media (max-width: 576px) {
+    
     .header {
         background-color: #E0E0E0;
         display: flex;
@@ -30,6 +31,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1900px)  {
+    /*Header e Body*/
     .headerbg{
         display: flex;
         justify-content: center;
@@ -43,30 +45,39 @@ body {
         display: flex;
         justify-content: center;
     }
-
-
     .header ,.body {
         width: 1100px;
+        font-size: 14px;
     }
     .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    .body{
+        margin: 20px 0 0 0;
+        padding: 10px;
+        display: flex;
+    }
     #header-menu--buttom-hamburguer,#header-menu--buttom-fechar{
         display: none;
     }
-    .header-icon img{
+    .header-icon-title img{
         width: auto;
         height: 50px;
         padding: 5px;
     }
+    .header-icon-title{
+        display: flex;
+        align-items: center;
+    }
+    
+    
     .header-menu--item{
         background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
     }
-    
     .header-menu--buttom{
         margin: 5px 0 5px 0;
         padding: 0px 10px 0 10px;
@@ -79,19 +90,91 @@ body {
 
 
 
-    .body{
-        margin: 20px 0 0 0;
-        padding: 10px;
-        display: flex;
-    }
 
-    .form{
+
+    /* Form */
+    .formbg{
         border: solid;
         border-width: 1px;
         border-radius: 5px;
-        padding: 10px;
-        width: 50%;
+        padding: 15px;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-buttom--add-transacao,
+    .form-input--valor,
+    .form-input--nome-mercadoria,
+    .form-combobox--itens{
+     width: 100%;   
+     height: 30px;
+     align-items: center;
+     box-sizing: border-box;
+     padding-left: 5px;
+
+     /*border-radius: 4px;*/
+    }
+    .form-title, .form-title-main{
+        padding: 15px 0 5px 0 ;
+    }
+    .form-buttom{
+        padding: 15px 0 15px 0;
+    }
+    .form-buttom--add-transacao{
+        background-color: #333333;
+        color: #FFFFFF;
+    }
+    .form-title-main, .list-title{
+        font-weight: bold;
+        text-align: center;
     }
 
+
+    /*List*/
+    .list{
+        width: 65%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .list-titles, .list-total{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        font-weight: bold;
+    }
+    .list-subtitle, .list-insert, .list-total {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-insert,.list-subtitle {
+        padding: 0 20px 0 20px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+    .list-total{
+        margin-top: 5px;
+        border-top: solid;
+        border-width: 1px;
+        display: flex;
+        flex-direction: row;
+    }
+    .list-subtitle-div, .list-insert-div, .list-total-div{
+        margin: 10px;
+    }
+    .list-insert--simbolo{
+        padding: 10px;
+    }
+    .list-subtitle--mercadoria{
+        margin: 30px;
+    } 
+    .list-total-div{
+        padding: 0 20px 0 50px;
+    }
+    .list-insert--valor-label{
+        font-size: 12px;
+        text-align: right;
+    }
 
 }

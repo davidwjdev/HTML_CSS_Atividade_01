@@ -14,14 +14,17 @@
     <div class="content">
         <header class="headerbg">
             <div class="header">
-                <div class="header-icon" id="header-icon">
+                <div class="header-icon-title" id="header-icon-title">
                     <img src="./assets/img/logo.png" alt="logo">
-                </div>
-                <div class="header-title" id="header-title">
+
+
                     <span id="header-title--span">
                         Controle Financeiro
+
                     </span>
+
                 </div>
+
                 <div class="header-menu" id="header-menu">
                     <div class="header-menu--buttom" id="header-menu--buttom-hamburguer">
                         <img src="./assets/img/hamburguer.png" alt="menu">
@@ -48,82 +51,103 @@
         </header>
         <section class="bodybg">
             <div class="body">
-                <div class="form">
-                    <div class="form-title">
+                <div class="formbg">
+                    <div class="form-title-main form">
                         <span class="form-title--tipo-transacao" id="form-title--tipo-transacao">
                             Nova transação
                         </span>
                     </div>
-                    <div class="form-subtitle">
+                    <div class="form-title form">
                         <span class="form-subtitle--tipo-transacao" id="form-subtitle--tipo-transacao">
                             Tipo de Transação
                         </span>
                     </div>
-                    <div class="form-combobox">
+                    <div class="form-combobox form">
                         <select class="form-combobox--itens" name="form-combobox--itens" id="form-combobox--itens">
                             <option value="Compra">Compra</option>
                             <option value="Venda">Venda</option>
                         </select>
                     </div>
-                    <div class="form-title">
+                    <div class="form-title form">
                         <span class="form-title--nome-mercadoria" id="form-title--nome-mercadoria">
                             Nome da Mercadoria
                         </span>
                     </div>
-                    <div class="form-input">
-                        <input class="form-input--nome-mercadoria" id="form-input--nome-mercadoria" placeholder="Input" type="text" />
+                    <div class="form-input form">
+                        <input class="form-input--nome-mercadoria" id="form-input--nome-mercadoria" placeholder="Input"
+                            type="text" />
                     </div>
-                    <div class="form-title">
+                    <div class="form-title form">
                         <span class="form-title--valor" id="form-title--valor">
                             Valor
                         </span>
                     </div>
-                    <div class="form-input">
+                    <div class="form-input form">
                         <input class="form-input--valor" id="form-input--valor" placeholder="R$ 0,00" type="text" />
                     </div>
-                    <div class="form-buttom">
+                    <div class="form-buttom form">
                         <button class="form-buttom--add-transacao" id="form-buttom--add-transacao">
                             Adicionar Transação
                         </button>
                     </div>
                 </div>
                 <div class="list">
-                    <div class="list-title">
-                        <span class="list-title--extrato" id="list-title--extrato">
-                            Extrato de transações
-                        </span>
-                    </div>
-                    <div class="list-subtitle">
-                        <div class="list-subtitle">
-                            <span class="list-subtitle--mercadoria">
-                                Mercadoria
+                    <div class="list-titles">
+                        <div class="list-title">
+                            <span class="list-title--extrato" id="list-title--extrato">
+                                Extrato de transações
                             </span>
                         </div>
                         <div class="list-subtitle">
-                            <span class="list-subtitle--valor">
-                                Valor
-                            </span>
+                            <div class="list-subtitle-div">
+                                <span class="list-subtitle--mercadoria">
+                                    Mercadoria
+                                </span>
+                            </div>
+                            <div class="list-subtitle-div">
+                                <span class="list-subtitle--valor">
+                                    Valor
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="list-insert">
-                        <div class="list-insert">
+                        <div class="list-insert-div">
+                            <span class="list-insert--simbolo">
+                                +
+                            </span>
                             <span class="list-insert--mercadoria">
                                 Nenhuma transação cadastrada
                             </span>
                         </div>
-                        <div class="list-insert">
+                        <div class="list-insert-div">
+                            <span class="list-insert--valor">
+                                R$ 0,00
+                            </span>
+                        </div>
+                    </div>
+                    <div class="list-insert">
+                        <div class="list-insert-div">
+                            <span class="list-insert--simbolo">
+                                +
+                            </span>
+                            <span class="list-insert--mercadoria">
+                                Nenhuma transação cadastrada
+                            </span>
+                        </div>
+                        <div class="list-insert-div">
                             <span class="list-insert--valor">
                                 R$ 0,00
                             </span>
                         </div>
                     </div>
                     <div class="list-total">
-                        <div class="list-total">
+                        <div class="list-total-div">
                             <span class="list-total--mercadoria">
                                 Total
                             </span>
                         </div>
-                        <div class="list-total">
+                        <div class="list-total-div">
                             <div class="list-insert--valor">
                                 <span class="list-insert--valor">
                                     R$ 0,00
@@ -136,9 +160,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <footer>
