@@ -1,240 +1,192 @@
-body {
+/*Header e Body*/
+
+#content {
     margin: 0px;
     font-family: 'latoregular';
+    font-size: 14px;
 }
 
-
-/*mudar para max depois*/
-
-@media screen and (min-width: 0px) and (max-width: 731px) {
-    
-    .header {
-        background-color: #E0E0E0;
-        display: flex;
-        height: 100px;
-    }
-    #header-title--span {
-        font-size: 32px;
-    }
-    .header-menu--item {
-        display: block;
-        color: #FFFFFF;
-        background-color: #333333;
-        height: 100%;
-        width: 75%;
-        text-align: right;
-    }
-    .form {
-        display: flex;
-        flex-flow: column;
-    }
-}
-
-@media screen and (min-width: 732px) and (max-width: 1024px){
-/*Header e Body*/
-.headerbg{
+#headerbg {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 30%;
     background-color: #E0E0E0;
 }
-.bodybg{
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-icon-title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 20px;
+}
+
+#header-icon-title--img {
+    height: auto;
+    width: 30px;
+}
+
+#body {
+    margin: 20px 0 0 0;
+    padding: 10px;
+}
+
+#bodybg {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.header ,.body {
-    width: 1100px;
-    font-size: 14px;
+
+
+/* Form */
+
+#formbg {
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 15px;
+    width: 35%;
 }
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+#form-title-main,
+#list-title {
+    font-weight: bold;
+    text-align: center;
 }
-.body{
-    margin: 20px 0 0 0;
+
+
+/* List */
+
+#list {
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
-#header-menu--buttom-hamburguer,#header-menu--buttom-fechar{
-    display: none;
-}
-.header-icon-title img{
-    width: auto;
-    height: 50px;
-    padding: 5px;
-}
-.header-icon-title{
+
+#list-subtitle,
+.list-insert,
+#list-total {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+#list-subtitle,
+#list-total {
+    font-weight: bold;
+}
 
-.header-menu--item{
-    background-color: #FFFFFF;
+.list-insert {
+    padding: 0 20px 0 20px;
+    border-top: 1px solid;
+}
+
+#list-total {
+    margin-top: 10px;
+    border-top: double;
     display: flex;
     flex-direction: row;
 }
-.header-menu--buttom{
-    margin: 5px 0 5px 0;
-    padding: 0px 10px 0 10px;
-    border-right-style: solid;
-    border-color: #979797;
-}
-#header-menu--buttom-salvar{
-     border: none;
+
+.list-subtitle-div,
+.list-insert-div,
+.list-total-div {
+    margin: 10px;
 }
 
+.list-insert--simbolo {
+    padding: 10px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1900px)  {
+.list-total-div,
+.list-subtitle-div {
+    padding: 0 20px 0 50px;
+}
+
+.list-insert--valor-label {
+    font-size: 12px;
+    text-align: right;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1900px),
+screen and (min-width: 1000px) and (orientation: landscape) {
     /*Header e Body*/
-    .headerbg{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 30%;
-        background-color: #E0E0E0;
+    #headerbg {
+        height: 80px;
     }
-    .bodybg{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .header ,.body {
+    #header,
+    #body {
         width: 1100px;
-        font-size: 14px;
     }
-    .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    #header-icon-title--img {
+        width: 40px;
     }
-    .body{
-        margin: 20px 0 0 0;
-        padding: 10px;
-        display: flex;
+    #header-icon-title--span {
+        margin: 10px;
     }
-    #header-menu--buttom-hamburguer,#header-menu--buttom-fechar{
+    #header-menu-buttom--hamburguer,
+    #header-menu-buttom--fechar {
         display: none;
     }
-    .header-icon-title img{
-        width: auto;
-        height: 50px;
-        padding: 5px;
-    }
-    .header-icon-title{
-        display: flex;
-        align-items: center;
-    }
-    
-    
-    .header-menu--item{
+    .header-menu-item {
         background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
     }
-    .header-menu--buttom{
-        margin: 5px 0 5px 0;
-        padding: 0px 10px 0 10px;
+    .header-menu-buttom {
         border-right-style: solid;
         border-color: #979797;
+        padding: 0px 10px 0 10px;
+        margin: 5px 0 5px 0;
     }
-    #header-menu--buttom-salvar{
-         border: none;
+    #header-menu-buttom-div3 {
+        border: none;
     }
-
-
-
-
-
-    /* Form */
-    .formbg{
-        border: solid;
-        border-width: 1px;
-        border-radius: 5px;
-        padding: 15px;
-        width: 35%;
-        display: flex;
-        flex-direction: column;
+    .header-menu-buttom :hover {
+        color: #979797;
+        cursor: pointer;
     }
-    .form-buttom--add-transacao,
-    .form-input--valor,
-    .form-input--nome-mercadoria,
-    .form-combobox--itens{
-     width: 100%;   
-     height: 30px;
-     align-items: center;
-     box-sizing: border-box;
-     padding-left: 5px;
-
-     /*border-radius: 4px;*/
-    }
-    .form-title, .form-title-main{
-        padding: 15px 0 5px 0 ;
-    }
-    .form-buttom{
-        padding: 15px 0 15px 0;
-    }
-    .form-buttom--add-transacao{
-        background-color: #333333;
-        color: #FFFFFF;
-    }
-    .form-title-main, .list-title{
-        font-weight: bold;
-        text-align: center;
-    }
-
-
-    /*List*/
-    .list{
-        width: 65%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-    }
-    .list-titles, .list-total{
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        font-weight: bold;
-    }
-    .list-subtitle, .list-insert, .list-total {
+    #body {
         display: flex;
         justify-content: space-between;
     }
-    .list-insert,.list-subtitle {
-        padding: 0 20px 0 20px;
-        border-bottom: solid;
-        border-width: 1px;
-    }
-    .list-total{
-        margin-top: 5px;
-        border-top: solid;
-        border-width: 1px;
+    /* Form */
+    #formbg {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-    .list-subtitle-div, .list-insert-div, .list-total-div{
-        margin: 10px;
+    #form-buttom--add-transacao,
+    #form-input--valor,
+    #form-input--nome-mercadoria,
+    #form-combobox--itens {
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 5px;
+        color: #979797;
+        /*border-radius: 4px;*/
     }
-    .list-insert--simbolo{
-        padding: 10px;
+    .form-title,
+    .form-title-main {
+        padding: 15px 0 5px 0;
     }
-    .list-subtitle--mercadoria{
-        margin: 30px;
-    } 
-    .list-total-div{
-        padding: 0 20px 0 50px;
+    .form-buttom {
+        padding: 15px 0 15px 0;
     }
-    .list-insert--valor-label{
-        font-size: 12px;
-        text-align: right;
+    #form-buttom--add-transacao {
+        background-color: #333333;
+        color: #FFFFFF;
     }
-
+    /*List*/
+    #list {
+        width: 65%;
+    }
 }
