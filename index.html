@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="author" content="David">
     <title>Controle Financeiro - Atividade 1 - HTML/CSS</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/font/stylesheet.css" type="text/css">
 
@@ -13,17 +16,28 @@
 <body id="content">
     <header id="headerbg">
         <div id="header">
+
+
             <div id="header-icon-title">
                 <img src="./assets/img/logo.png" alt="logo" id="header-icon-title--img">
+            </div>
+            <div id="header-title">
                 <span id="header-icon-title--span">
-                    Controle Financeiro
-                </span>
+                        Controle Financeiro
+                    </span>
             </div>
             <div class="header-menu" id="header-menu">
                 <div class="header-menu-buttom" id="header-menu-buttom--hamburguer">
-                    <img src="./assets/img/hamburguer.png" alt="menu">
+                    <!---->
+                    <img src="./assets/img/hamburguer.svg" alt="menu" />
+
+
                 </div>
-                <div class="header-menu-item">
+
+
+
+
+                <div id="header-menu-item">
 
                     <span id="header-menu-buttom--fechar">
                             x
@@ -56,33 +70,33 @@
                         Nova transação
                     </span>
                 </div>
-                <div class="form-title">
-                    <span id="form-subtitle--tipo-transacao">
+
+                <div id="form">
+
+                    <div id="form-item1">
+                        <span class="form-title" id="form-subtitle--tipo-transacao">
                         Tipo de Transação
                     </span>
-                </div>
-                <div class="form-combobox">
-                    <select name="form-combobox--itens" id="form-combobox--itens">
+                        <select name="form-combobox--itens" id="form-combobox--itens">
                         <option value="Compra">Compra</option>
                         <option value="Venda">Venda</option>
                     </select>
-                </div>
-                <div class="form-title">
-                    <span id="form-title--nome-mercadoria">
+                    </div>
+                    <div id="form-item2">
+                        <span class="form-title" id="form-title--nome-mercadoria">
                         Nome da Mercadoria
                     </span>
-                </div>
-                <div class="form-input">
-                    <input id="form-input--nome-mercadoria" placeholder="Input" type="text" />
-                </div>
-                <div class="form-title">
-                    <span id="form-title--valor">
+                        <input id="form-input--nome-mercadoria" placeholder="Input" type="text" />
+                    </div>
+                    <div id="form-item3">
+                        <span class="form-title" id="form-title--valor">
                         Valor
                     </span>
+                        <input id="form-input--valor" placeholder="R$ 0,00" type="text" />
+                    </div>
+
                 </div>
-                <div class="form-input">
-                    <input id="form-input--valor" placeholder="R$ 0,00" type="text" />
-                </div>
+
                 <div class="form-buttom">
                     <button id="form-buttom--add-transacao">
                         Adicionar Transação

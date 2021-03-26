@@ -1,3 +1,6 @@
+/*--------------------------------------------------------*/
+
+
 /*Header e Body*/
 
 #content {
@@ -11,18 +14,18 @@
     justify-content: center;
     width: 100%;
     background-color: #E0E0E0;
+    padding: 5px;
 }
 
-#header {
+#header,
+#header-div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 #header-icon-title {
     display: flex;
     align-items: center;
-    width: 50%;
     font-size: 20px;
 }
 
@@ -46,18 +49,27 @@
 
 /* Form */
 
-#formbg {
-    border: solid;
-    border-width: 1px;
-    border-radius: 4px;
-    padding: 15px;
-    width: 35%;
-}
-
 #form-title-main,
 #list-title {
     font-weight: bold;
     text-align: center;
+}
+
+#form-buttom--add-transacao {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+#form-buttom--add-transacao,
+#form-input--valor,
+#form-input--nome-mercadoria,
+#form-combobox--itens {
+    height: 30px;
+    align-items: center;
+    box-sizing: border-box;
+    color: #979797;
+    border-radius: 4px;
+    padding-left: 5px;
 }
 
 
@@ -115,8 +127,148 @@
     text-align: right;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1900px),
-screen and (min-width: 1000px) and (orientation: landscape) {
+
+/*--------------------------------------------------------*/
+
+
+/*celulares*/
+
+@media screen and (max-width: 768px) {
+    /*Header e Body*/
+    #headerbg {
+        height: 60px;
+    }
+    #header,
+    #body {
+        width: 90%;
+    }
+    #header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header-icon-title--img {
+        width: 30px;
+    }
+    #header-menu-buttom--hamburguer {
+        /* width: 30px;*/
+        padding: 20px;
+    }
+    #header-menu-item {
+        display: none;
+        background-color: #333333;
+        height: 100%;
+        width: 40%;
+    }
+    /* Form */
+    #formbg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid;
+    }
+    #form-buttom--add-transacao,
+    #form-input--valor,
+    #form-input--nome-mercadoria,
+    #form-combobox--itens {
+        width: 100%;
+    }
+    .form-title,
+    .form-title-main {
+        padding: 15px 0 5px 0;
+        display: inline-block;
+    }
+    .form-buttom {
+        padding: 15px 0 15px 0;
+    }
+    /* List */
+    #list {
+        padding: 10px 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+    }
+}
+
+
+/*tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*Header e Body*/
+    #headerbg {
+        height: 60px;
+    }
+    #header,
+    #body {
+        width: 90%;
+    }
+    #header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header-icon-title--img {
+        width: 30px;
+    }
+    #header-menu-buttom--hamburguer {
+        width: 30px;
+    }
+    #header-menu-item {
+        display: none;
+        background-color: #333333;
+        height: 100%;
+        width: 40%;
+    }
+    /* Form */
+    #formbg {
+        width: 95%;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        padding: 15px;
+    }
+    #form {
+        display: flex;
+        flex-direction: row;
+    }
+    #form-item1,
+    #form-item2,
+    #form-item3 {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .form-title,
+    .form-title-main {
+        padding: 15px 0 5px 0;
+        display: inline-block;
+    }
+    #form-item1,
+    #form-item3 {
+        width: 30%;
+    }
+    #form-item2 {
+        width: 40%;
+    }
+    #form-buttom--add-transacao {
+        width: 30%;
+    }
+    .form-buttom {
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+    }
+    /* List */
+    #list {
+        padding: 10px 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+    }
+}
+
+
+/*desktop and tablet landscape*/
+
+@media screen and (min-width: 1024px) {
     /*Header e Body*/
     #headerbg {
         height: 80px;
@@ -124,6 +276,15 @@ screen and (min-width: 1000px) and (orientation: landscape) {
     #header,
     #body {
         width: 1100px;
+    }
+    #header-menu {
+        margin-right: 20px;
+    }
+    #header-title {
+        flex: 3;
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 0%;
     }
     #header-icon-title--img {
         width: 40px;
@@ -135,7 +296,7 @@ screen and (min-width: 1000px) and (orientation: landscape) {
     #header-menu-buttom--fechar {
         display: none;
     }
-    .header-menu-item {
+    #header-menu-item {
         background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
@@ -161,29 +322,25 @@ screen and (min-width: 1000px) and (orientation: landscape) {
     #formbg {
         display: flex;
         flex-direction: column;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        padding: 15px;
+        width: 35%;
     }
     #form-buttom--add-transacao,
     #form-input--valor,
     #form-input--nome-mercadoria,
     #form-combobox--itens {
         width: 100%;
-        height: 30px;
-        align-items: center;
-        box-sizing: border-box;
-        padding-left: 5px;
-        color: #979797;
-        /*border-radius: 4px;*/
     }
     .form-title,
     .form-title-main {
         padding: 15px 0 5px 0;
+        display: inline-block;
     }
     .form-buttom {
         padding: 15px 0 15px 0;
-    }
-    #form-buttom--add-transacao {
-        background-color: #333333;
-        color: #FFFFFF;
     }
     /*List*/
     #list {
