@@ -47,6 +47,10 @@
 }
 
 
+#header-menu-buttom--hamburguer {
+    padding: 20px;
+}
+
 /* Form */
 
 #form-title-main,
@@ -149,16 +153,38 @@
     #header-icon-title--img {
         width: 30px;
     }
-    #header-menu-buttom--hamburguer {
-        /* width: 30px;*/
-        padding: 20px;
-    }
+
     #header-menu-item {
-        display: none;
+        /*display: none;
+        display: absolute;
         background-color: #333333;
         height: 100%;
-        width: 40%;
+        width: 40%; 
+        right: 0;*/
+
+        flex-direction: column;
+    background-color: #333333;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
     }
+
+
+    
+
+
+
+
+
+
+
+
     /* Form */
     #formbg {
         display: flex;
@@ -296,11 +322,21 @@
     #header-menu-buttom--fechar {
         display: none;
     }
-    #header-menu-item {
+
+    .header-menu-buttom-ul{
+        list-style: none;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
+        padding: 0;
     }
+    #header-menu-buttom--li-fechar{
+        display: none;
+    }
+    #header-menu-buttom--li-salvar{
+        border: none;
+    }
+
     .header-menu-buttom {
         border-right-style: solid;
         border-color: #979797;
