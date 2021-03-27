@@ -230,7 +230,7 @@
 
 /*tablet*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px)and (orientation:portrait) {
+@media screen and (min-width: 768px) and (max-width: 1023px)and (orientation:portrait) {
     /*Header e Body*/
     #headerbg {
         height: 60px;
@@ -339,7 +339,7 @@
 /*desktop and tablet landscape*/
 
 @media screen and (min-width: 1024px),
-screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+screen and (min-width: 768px) and (max-width: 1023px) and (orientation:landscape) {
     /*Header e Body*/
     #headerbg {
         height: 80px;
