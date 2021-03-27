@@ -153,26 +153,38 @@
     #header-icon-title--img {
         width: 30px;
     }
+        
+    .header-menu-buttom{
+        padding: 20px;
 
-    #header-menu-item {
-        /*display: none;
-        display: absolute;
-        background-color: #333333;
-        height: 100%;
-        width: 40%; 
-        right: 0;*/
-
+    }
+    .header-menu-buttom-ul{
         flex-direction: column;
-    background-color: #333333;
-    margin: 0;
-    height: 100%;
-    width: 90%;
-    max-width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        list-style-type: none;
+        color: #E0E0E0;
+        text-align: right;
+        font-weight: bold;
+        display: none;
 
+    }
+    .header-menu-buttom-ul :hover {
+        background-color: #E0E0E0;
+        color:  #333333;
+    }
+    #header-menu-buttom--li-fechar{
+        text-align: left;
+        margin-bottom: 50px;
+        width: 10px;
     }
 
 
@@ -218,7 +230,7 @@
 
 /*tablet*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px)and (orientation:portrait) {
     /*Header e Body*/
     #headerbg {
         height: 60px;
@@ -237,12 +249,44 @@
     #header-menu-buttom--hamburguer {
         width: 30px;
     }
-    #header-menu-item {
-        display: none;
-        background-color: #333333;
-        height: 100%;
-        width: 40%;
+
+    
+    .header-menu-buttom{
+        padding: 20px;
+
     }
+    .header-menu-buttom-ul{
+        flex-direction: column;
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        list-style-type: none;
+        color: #E0E0E0;
+        text-align: right;
+        font-weight: bold;
+        display: none;
+
+    }
+    .header-menu-buttom-ul :hover {
+        background-color: #E0E0E0;
+        color:  #333333;
+    }
+    #header-menu-buttom--li-fechar{
+        text-align: left;
+        margin-bottom: 50px;
+        width: 10px;
+    }
+
+
+
+
     /* Form */
     #formbg {
         width: 95%;
@@ -294,7 +338,8 @@
 
 /*desktop and tablet landscape*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px),
+screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
     /*Header e Body*/
     #headerbg {
         height: 80px;
@@ -324,7 +369,7 @@
     }
 
     .header-menu-buttom-ul{
-        list-style: none;
+        list-style-type: none;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
